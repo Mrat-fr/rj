@@ -39,7 +39,7 @@ export default function QuoteForm() {
       <div className="absolute inset-0 grid-bg opacity-30" />
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[radial-gradient(ellipse_at_center,rgba(212,160,23,0.07),transparent_70%)]" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
         <div className="grid lg:grid-cols-5 gap-16 items-start">
 
           {/* Left side — contact info */}
@@ -107,19 +107,19 @@ export default function QuoteForm() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="bg-[#111] border border-[#D4A017]/15 p-8 md:p-10 space-y-6">
-                <div className="grid sm:grid-cols-2 gap-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <FormField label="Full Name" required>
                     <input
                       type="text" name="name" required value={form.name} onChange={handleChange}
                       placeholder="John Smith"
-                      className="w-full bg-[#0a0a0a] border border-[#222] text-white px-4 py-3.5 text-sm focus:outline-none focus:border-[#D4A017] transition-colors placeholder-gray-700"
+                      className="w-full h-12 bg-[#0a0a0a] border border-[#222] text-white px-4 text-sm focus:outline-none focus:border-[#D4A017] transition-colors placeholder-gray-700"
                     />
                   </FormField>
                   <FormField label="Phone Number" required>
                     <input
                       type="tel" name="phone" required value={form.phone} onChange={handleChange}
                       placeholder="07X XXX XXXX"
-                      className="w-full bg-[#0a0a0a] border border-[#222] text-white px-4 py-3.5 text-sm focus:outline-none focus:border-[#D4A017] transition-colors placeholder-gray-700"
+                      className="w-full h-12 bg-[#0a0a0a] border border-[#222] text-white px-4 text-sm focus:outline-none focus:border-[#D4A017] transition-colors placeholder-gray-700"
                     />
                   </FormField>
                 </div>
@@ -128,14 +128,14 @@ export default function QuoteForm() {
                   <input
                     type="email" name="email" required value={form.email} onChange={handleChange}
                     placeholder="john@example.com"
-                    className="w-full bg-[#0a0a0a] border border-[#222] text-white px-4 py-3.5 text-sm focus:outline-none focus:border-[#D4A017] transition-colors placeholder-gray-700"
+                    className="w-full h-12 bg-[#0a0a0a] border border-[#222] text-white px-4 text-sm focus:outline-none focus:border-[#D4A017] transition-colors placeholder-gray-700"
                   />
                 </FormField>
 
                 <FormField label="Service Required" required>
                   <select
                     name="service" required value={form.service} onChange={handleChange}
-                    className="w-full bg-[#0a0a0a] border border-[#222] text-white px-4 py-3.5 text-sm focus:outline-none focus:border-[#D4A017] transition-colors appearance-none cursor-pointer"
+                    className="w-full h-12 bg-[#0a0a0a] border border-[#222] text-white px-4 text-sm focus:outline-none focus:border-[#D4A017] transition-colors appearance-none cursor-pointer"
                   >
                     <option value="" className="text-gray-600">Select a service...</option>
                     {services.map((s) => (
@@ -161,7 +161,7 @@ export default function QuoteForm() {
                 <button
                   type="submit"
                   disabled={status === "loading"}
-                  className="w-full bg-[#D4A017] text-black font-black py-4 text-base uppercase tracking-widest hover:bg-[#F0C040] hover:shadow-[0_0_30px_rgba(212,160,23,0.4)] transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
+                  className="w-full h-12 bg-[#D4A017] text-black font-black text-base uppercase tracking-widest hover:bg-[#F0C040] hover:shadow-[0_0_30px_rgba(212,160,23,0.4)] transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
                 >
                   {status === "loading" ? (
                     <span className="flex items-center justify-center gap-2">

@@ -10,17 +10,12 @@ export default function Hero() {
       {/* Left gold accent bar */}
       <div className="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-[#D4A017]/50 to-transparent" />
 
-      {/* Decorative corner marks */}
-      <div className="absolute top-24 left-6 w-8 h-8 border-t-2 border-l-2 border-[#D4A017]/40" />
-      <div className="absolute top-24 right-6 w-8 h-8 border-t-2 border-r-2 border-[#D4A017]/40" />
-      <div className="absolute bottom-12 left-6 w-8 h-8 border-b-2 border-l-2 border-[#D4A017]/40" />
-      <div className="absolute bottom-12 right-6 w-8 h-8 border-b-2 border-r-2 border-[#D4A017]/40" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-28 pb-20 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 lg:px-16 pt-28 pb-20 w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
           {/* Left — Copy */}
-          <div>
+          <div className="text-center lg:text-left">
             <div className="inline-flex items-center gap-2 border border-[#D4A017]/40 bg-[#D4A017]/8 px-4 py-2 mb-8 animate-fade-in-left">
               <span className="w-1.5 h-1.5 rounded-full bg-[#D4A017] animate-pulse-gold" />
               <span className="text-[#D4A017] text-xs font-black tracking-[0.3em] uppercase">London &amp; Surrounding Areas</span>
@@ -182,14 +177,6 @@ export default function Hero() {
       {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0a0a0a] to-transparent pointer-events-none" />
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
-        <span className="text-xs text-gray-600 font-bold tracking-widest uppercase">Scroll</span>
-        <svg width="16" height="24" viewBox="0 0 16 24" fill="none" className="text-[#D4A017]">
-          <rect x="1" y="1" width="14" height="22" rx="7" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.4" />
-          <circle cx="8" cy="7" r="2.5" fill="currentColor" className="animate-bounce" />
-        </svg>
-      </div>
     </section>
   );
 }
