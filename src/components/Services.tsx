@@ -1,20 +1,26 @@
+import Link from "next/link";
+
 const services = [
   {
+    slug: "waste-removals",
     title: "Waste Removals",
     description: "Fast, responsible clearance for homes and businesses. We handle it all so you don't have to.",
     icon: WasteIcon,
   },
   {
+    slug: "house-removals",
     title: "House Removals",
     description: "Stress-free home moves handled with care. We pack, load, transport, and unload — safely every time.",
     icon: HouseIcon,
   },
   {
+    slug: "office-removals",
     title: "Office Removals",
     description: "Efficient office relocations to minimise downtime. Your business keeps moving, and so do we.",
     icon: OfficeIcon,
   },
   {
+    slug: "load-unload",
     title: "Load & Unload",
     description: "Need a hand with the heavy lifting? Our team loads and unloads quickly, carefully, every time.",
     icon: BoxIcon,
@@ -23,7 +29,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="relative py-28 bg-[#0d0d0d] overflow-hidden">
+    <section id="services" className="relative flex-1 flex flex-col justify-center py-16 bg-[#0d0d0d] overflow-hidden">
       {/* Background details */}
       <div className="absolute inset-0 grid-bg opacity-40" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#D4A017]/30 to-transparent" />
@@ -53,9 +59,10 @@ export default function Services() {
 
         {/* Cards grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-          {services.map(({ title, description, icon: Icon }, idx) => (
-            <div
+          {services.map(({ slug, title, description, icon: Icon }, idx) => (
+            <Link
               key={title}
+              href={`/services/${slug}`}
               className="group relative bg-[#111] border border-[#D4A017]/15 rounded-xl p-7 card-hover overflow-hidden"
               style={{ animationDelay: `${idx * 0.1}s` }}
             >
@@ -87,22 +94,7 @@ export default function Services() {
                   <path d="M1 6h10M7 2l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Stats bar */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-0 border border-[#D4A017]/20 divide-x divide-[#D4A017]/20 bg-[#111]">
-          {[
-            { value: "500+", label: "Moves Completed" },
-            { value: "100%", label: "On-Time Rate" },
-            { value: "5★", label: "Customer Rating" },
-            { value: "24/7", label: "Availability" },
-          ].map(({ value, label }) => (
-            <div key={label} className="py-8 px-6 text-center">
-              <div className="text-3xl md:text-4xl font-black text-[#D4A017] leading-none mb-1">{value}</div>
-              <div className="text-xs text-gray-500 uppercase tracking-widest font-bold">{label}</div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

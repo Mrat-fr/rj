@@ -1,7 +1,12 @@
 export default function Footer() {
   const year = new Date().getFullYear();
 
-  const serviceLinks = ["Waste Removals", "House Removals", "Office Removals", "Load & Unload"];
+  const serviceLinks = [
+    { label: "Waste Removals", slug: "waste-removals" },
+    { label: "House Removals", slug: "house-removals" },
+    { label: "Office Removals", slug: "office-removals" },
+    { label: "Load & Unload", slug: "load-unload" },
+  ];
 
   return (
     <footer className="relative bg-[#080808] border-t border-[#D4A017]/20 overflow-hidden">
@@ -37,13 +42,13 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               {serviceLinks.map((s) => (
-                <li key={s}>
+                <li key={s.slug}>
                   <a
-                    href="#services"
+                    href={`/services/${s.slug}`}
                     className="text-gray-500 text-sm hover:text-[#D4A017] transition-colors duration-200 flex items-center gap-2 group"
                   >
                     <span className="w-1 h-1 bg-[#D4A017]/30 group-hover:bg-[#D4A017] rounded-full transition-colors" />
-                    {s}
+                    {s.label}
                   </a>
                 </li>
               ))}

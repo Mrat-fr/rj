@@ -42,7 +42,7 @@ export default function Hero() {
 
             <div className="flex flex-wrap gap-4 mb-12 animate-fade-in-left delay-400">
               <a
-                href="#quote"
+                href="/quote"
                 className="relative group bg-[#D4A017] text-black font-black px-8 py-4 text-base uppercase tracking-widest hover:bg-[#F0C040] transition-all duration-300 hover:shadow-[0_0_30px_rgba(212,160,23,0.5)]"
               >
                 <span className="relative z-10">GET A FREE QUOTE</span>

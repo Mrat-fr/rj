@@ -13,9 +13,9 @@ export default function Navbar() {
   }, []);
 
   const links = [
-    { label: "Services", href: "#services" },
-    { label: "Why Us", href: "#why-us" },
-    { label: "Contact", href: "#quote" },
+    { label: "Services", href: "/services" },
+    { label: "Why Us", href: "/why-us" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
@@ -29,7 +29,7 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3 group">
+          <a href="/" className="flex items-center gap-3 group">
             <div className="relative w-10 h-10 flex items-center justify-center">
               <div className="absolute inset-0 border-2 border-[#D4A017] rotate-45 group-hover:rotate-[135deg] transition-transform duration-500" />
               <span className="relative text-base font-black text-[#D4A017] leading-none">RJ</span>
@@ -64,13 +64,6 @@ export default function Navbar() {
               </svg>
               073 123 4567
             </a>
-            <a
-              href="#quote"
-              className="bg-[#D4A017] text-black font-black text-sm px-5 py-2.5 tracking-wider uppercase hover:bg-[#F0C040] transition-all duration-200 hover:shadow-[0_0_20px_rgba(212,160,23,0.4)]"
-            >
-              Get a Quote
-            </a>
-
             {/* Hamburger */}
             <button
               onClick={() => setMenuOpen(!menuOpen)}
@@ -103,13 +96,6 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a
-            href="#quote"
-            onClick={() => setMenuOpen(false)}
-            className="mt-4 bg-[#D4A017] text-black font-black px-10 py-4 text-lg uppercase tracking-widest hover:bg-[#F0C040] transition-colors"
-          >
-            Get a Quote
-          </a>
           <a
             href="tel:0731234567"
             onClick={() => setMenuOpen(false)}

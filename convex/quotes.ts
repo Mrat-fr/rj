@@ -1,13 +1,22 @@
 import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
 
+export const generateUploadUrl = mutation(async (ctx) => {
+  return await ctx.storage.generateUploadUrl();
+});
+
 export const submitQuote = mutation({
   args: {
     name: v.string(),
-    email: v.string(),
     phone: v.string(),
     service: v.string(),
-    message: v.string(),
+    message: v.optional(v.string()),
+    fromPostcode: v.string(),
+    fromLocation: v.string(),
+    toPostcode: v.string(),
+    toLocation: v.string(),
+    fromImageId: v.optional(v.id("_storage")),
+    toImageId: v.optional(v.id("_storage")),
   },
   handler: async (ctx, args) => {
     return await ctx.db.insert("quotes", {

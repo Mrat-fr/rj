@@ -28,7 +28,7 @@ const trustBadges = [
 
 export default function WhyUs() {
   return (
-    <section id="why-us" className="relative py-28 bg-[#0a0a0a] overflow-hidden">
+    <section id="why-us" className="relative flex-1 flex flex-col justify-center py-16 bg-[#0a0a0a] overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-30" />
       <div className="absolute top-0 right-0 w-96 h-96 bg-[radial-gradient(circle_at_center,rgba(212,160,23,0.06),transparent_70%)]" />
 
@@ -70,33 +70,6 @@ export default function WhyUs() {
           ))}
         </div>
 
-        {/* CTA Banner */}
-        <div className="relative bg-[#D4A017] p-10 md:p-14 overflow-hidden mb-10">
-          <div className="absolute inset-0 bg-[repeating-linear-gradient(45deg,transparent,transparent_10px,rgba(0,0,0,0.04)_10px,rgba(0,0,0,0.04)_20px)]" />
-          <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
-            <div>
-              <p className="text-black/50 text-xs font-black uppercase tracking-[0.3em] mb-2">Ready to move?</p>
-              <h3 className="text-4xl md:text-5xl font-black text-black leading-none">
-                ON TIME.<br className="md:hidden" /> EVERY TIME.
-              </h3>
-              <p className="text-black/60 font-bold italic text-lg mt-1">You Call, We Haul.</p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="#quote"
-                className="bg-black text-white font-black px-10 py-4 text-base uppercase tracking-widest hover:bg-[#111] transition-colors"
-              >
-                BOOK NOW
-              </a>
-              <a
-                href="tel:0731234567"
-                className="border-2 border-black text-black font-black px-10 py-4 text-base uppercase tracking-widest hover:bg-black/10 transition-colors text-center"
-              >
-                073 123 4567
-              </a>
-            </div>
-          </div>
-        </div>
 
         {/* Gold-bordered trust badge strip */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
