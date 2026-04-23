@@ -302,8 +302,8 @@ export default function QuotePage() {
 
                   <p className="text-center text-gray-600 text-xs">
                     Or call us:{" "}
-                    <a href="tel:0731234567" className="text-[#D4A017] font-bold hover:text-[#F0C040] transition-colors">
-                      073 123 4567
+                    <a href="tel:07757835819" className="text-[#D4A017] font-bold hover:text-[#F0C040] transition-colors">
+                      07757 835819
                     </a>
                   </p>
                 </form>

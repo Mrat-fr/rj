@@ -22,9 +22,9 @@ export default function QuoteForm() {
 
         <div className="grid md:grid-cols-3 gap-4 mb-10">
           {[
-            { Icon: PhoneIcon, label: "Phone", value: "073 123 4567", href: "tel:0731234567" },
-            { Icon: MailIcon, label: "Email", value: "randjlogisticremovals@gmail.com", href: "mailto:randjlogisticremovals@gmail.com" },
-            { Icon: PinIcon, label: "Area", value: "London & Surrounding Areas", href: "#" },
+            { Icon: PhoneIcon, label: "Phone", value: "07757 835819", href: "tel:07757835819" },
+            { Icon: MailIcon, label: "Email", value: "rjlogistics.removals@gmail.com", href: "mailto:rjlogistics.removals@gmail.com" },
+            { Icon: PinIcon, label: "Area", value: "Nottingham and Surrounding Midlands", href: "#" },
           ].map(({ Icon, label, value, href }) => (
             <a
               key={label}

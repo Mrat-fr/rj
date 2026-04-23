@@ -117,10 +117,10 @@ export default async function ServicePage(props: PageProps<"/services/[slug]">) 
               Request a Quote
             </Link>
             <a
-              href="tel:0731234567"
+              href="tel:07757835819"
               className="border-2 border-black text-black font-black px-8 py-4 uppercase tracking-widest hover:bg-black hover:text-white transition-all duration-200 text-center"
             >
-              073 123 4567
+              07757 835819
             </a>
           </div>
         </div>

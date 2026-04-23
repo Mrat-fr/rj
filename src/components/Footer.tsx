@@ -63,20 +63,20 @@ export default function Footer() {
             </h4>
             <ul className="space-y-4">
               <li>
-                <a href="tel:0731234567" className="group flex items-start gap-3 text-gray-500 hover:text-white transition-colors text-sm">
+                <a href="tel:07757835819" className="group flex items-start gap-3 text-gray-500 hover:text-white transition-colors text-sm">
                   <PhoneIcon className="w-4 h-4 text-[#D4A017] mt-0.5 shrink-0" />
-                  <span>073 123 4567</span>
+                  <span>07757 835819</span>
                 </a>
               </li>
               <li>
-                <a href="mailto:randjlogisticremovals@gmail.com" className="group flex items-start gap-3 text-gray-500 hover:text-white transition-colors text-sm">
+                <a href="mailto:rjlogistics.removals@gmail.com" className="group flex items-start gap-3 text-gray-500 hover:text-white transition-colors text-sm">
                   <MailIcon className="w-4 h-4 text-[#D4A017] mt-0.5 shrink-0" />
-                  <span className="break-all">randjlogisticremovals@gmail.com</span>
+                  <span className="break-all">rjlogistics.removals@gmail.com</span>
                 </a>
               </li>
               <li className="flex items-start gap-3 text-gray-500 text-sm">
                 <PinIcon className="w-4 h-4 text-[#D4A017] mt-0.5 shrink-0" />
-                <span>London &amp; Surrounding Areas</span>
+                <span>Nottingham and Surrounding Midlands</span>
               </li>
             </ul>
           </div>

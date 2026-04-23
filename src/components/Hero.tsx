@@ -18,7 +18,7 @@ export default function Hero() {
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center gap-2 border border-[#D4A017]/40 bg-[#D4A017]/8 px-4 py-2 mb-8 animate-fade-in-left">
               <span className="w-1.5 h-1.5 rounded-full bg-[#D4A017] animate-pulse-gold" />
-              <span className="text-[#D4A017] text-xs font-black tracking-[0.3em] uppercase">London &amp; Surrounding Areas</span>
+              <span className="text-[#D4A017] text-xs font-black tracking-[0.3em] uppercase">Nottingham and Surrounding Midlands</span>
             </div>
 
             <h1 className="text-6xl md:text-7xl xl:text-8xl font-black leading-[0.9] mb-6 animate-fade-in-left delay-100">
@@ -48,7 +48,7 @@ export default function Hero() {
                 <span className="relative z-10">GET A FREE QUOTE</span>
               </a>
               <a
-                href="tel:0731234567"
+                href="tel:07757835819"
                 className="border-2 border-[#D4A017]/50 text-white font-black px-8 py-4 text-base uppercase tracking-widest hover:border-[#D4A017] hover:text-[#D4A017] transition-all duration-300 backdrop-blur-sm"
               >
                 CALL NOW
@@ -154,9 +154,9 @@ export default function Hero() {
                 {/* Contact pills */}
                 <div className="space-y-2.5">
                   {[
-                    { icon: PhoneIcon, text: "073 123 4567", href: "tel:0731234567" },
-                    { icon: MailIcon, text: "randjlogisticremovals@gmail.com", href: "mailto:randjlogisticremovals@gmail.com" },
-                    { icon: PinIcon, text: "London & Surrounding Areas", href: "#" },
+                    { icon: PhoneIcon, text: "07757 835819", href: "tel:07757835819" },
+                    { icon: MailIcon, text: "rjlogistics.removals@gmail.com", href: "mailto:rjlogistics.removals@gmail.com" },
+                    { icon: PinIcon, text: "Nottingham and Surrounding Midlands", href: "#" },
                   ].map(({ icon: Icon, text, href }) => (
                     <a
                       key={text}
