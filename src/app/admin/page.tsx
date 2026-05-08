@@ -86,7 +86,7 @@ export default function AdminPage() {
               </span>
             )}
             <div className="ml-auto">
-              <UserButton afterSignOutUrl="/" />
+              <UserButton />
             </div>
           </div>
           <p className="text-gray-500 text-sm">
