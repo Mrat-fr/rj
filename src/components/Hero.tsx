@@ -36,7 +36,7 @@ export default function Hero() {
             </div>
 
             <p className="text-gray-400 text-lg max-w-md mb-10 leading-relaxed animate-fade-in-left delay-300">
-              Professional, reliable removals across London and surrounding areas.
+              Professional, reliable removals across Nottingham and Surrounding Midlands.
               On time, every time — because your move matters.
             </p>
 

@@ -29,7 +29,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed max-w-xs mb-4">
-              Professional removals and logistics across London and surrounding areas. Fast, reliable, affordable.
+              Professional removals and logistics across Nottingham and surrounding midlands. Fast, reliable, affordable.
             </p>
             <p className="text-[#D4A017] font-black italic text-sm tracking-wide">WE MOVE IT. YOU RELAX.</p>
           </div>

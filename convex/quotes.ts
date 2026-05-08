@@ -31,3 +31,21 @@ export const listQuotes = query({
     return await ctx.db.query("quotes").order("desc").collect();
   },
 });
+
+export const getImageUrl = query({
+  args: { storageId: v.id("_storage") },
+  handler: async (ctx, args) => {
+    return await ctx.storage.getUrl(args.storageId);
+  },
+});
+
+export const deleteQuote = mutation({
+  args: { quoteId: v.id("quotes") },
+  handler: async (ctx, args) => {
+    const quote = await ctx.db.get(args.quoteId);
+    if (!quote) throw new Error("Quote not found");
+    if (quote.fromImageId) await ctx.storage.delete(quote.fromImageId);
+    if (quote.toImageId) await ctx.storage.delete(quote.toImageId);
+    await ctx.db.delete(args.quoteId);
+  },
+});
