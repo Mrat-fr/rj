@@ -21,25 +21,33 @@ export default function QuoteForm() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-4 mb-10">
-          {[
-            { Icon: PhoneIcon, label: "Phone", value: "07757 835819", href: "tel:07757835819" },
-            { Icon: MailIcon, label: "Email", value: "rjlogistics.removals@gmail.com", href: "mailto:rjlogistics.removals@gmail.com" },
-            { Icon: PinIcon, label: "Area", value: "Nottingham and Surrounding Midlands", href: "#" },
-          ].map(({ Icon, label, value, href }) => (
-            <a
-              key={label}
-              href={href}
-              className="group flex items-start gap-4 border border-[#D4A017]/15 bg-[#111] p-5 hover:border-[#D4A017]/50 hover:bg-[#D4A017]/5 transition-all duration-300"
-            >
-              <div className="w-10 h-10 border border-[#D4A017]/30 group-hover:border-[#D4A017] flex items-center justify-center shrink-0 transition-colors">
-                <Icon className="w-5 h-5 text-[#D4A017]" />
-              </div>
-              <div>
-                <p className="text-xs text-gray-600 font-bold uppercase tracking-widest mb-0.5">{label}</p>
-                <p className="text-white text-sm font-bold break-all">{value}</p>
-              </div>
-            </a>
-          ))}
+          <div className="flex items-start gap-4 border border-[#D4A017]/15 bg-[#111] p-5">
+            <div className="w-10 h-10 border border-[#D4A017]/30 flex items-center justify-center shrink-0">
+              <PhoneIcon className="w-5 h-5 text-[#D4A017]" />
+            </div>
+            <div>
+              <p className="text-xs text-gray-600 font-bold uppercase tracking-widest mb-0.5">Phone</p>
+              <p className="text-white text-sm font-bold">07757 835819</p>
+            </div>
+          </div>
+          <div className="flex items-start gap-4 border border-[#D4A017]/15 bg-[#111] p-5">
+            <div className="w-10 h-10 border border-[#D4A017]/30 flex items-center justify-center shrink-0">
+              <MailIcon className="w-5 h-5 text-[#D4A017]" />
+            </div>
+            <div>
+              <p className="text-xs text-gray-600 font-bold uppercase tracking-widest mb-0.5">Email</p>
+              <p className="text-white text-sm font-bold break-all">rjlogistics.removals@gmail.com</p>
+            </div>
+          </div>
+          <div className="flex items-start gap-4 border border-[#D4A017]/15 bg-[#111] p-5">
+            <div className="w-10 h-10 border border-[#D4A017]/30 flex items-center justify-center shrink-0">
+              <PinIcon className="w-5 h-5 text-[#D4A017]" />
+            </div>
+            <div>
+              <p className="text-xs text-gray-600 font-bold uppercase tracking-widest mb-0.5">Area</p>
+              <p className="text-white text-sm font-bold">Nottingham and Surrounding Midlands</p>
+            </div>
+          </div>
         </div>
 
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">

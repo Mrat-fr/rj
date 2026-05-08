@@ -54,16 +54,6 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-4">
-            <a
-              href="tel:07757835819"
-              className="hidden lg:flex items-center gap-2 text-sm font-bold text-[#D4A017] hover:text-[#F0C040] transition-colors"
-            >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 0139.91 2.18 2 2 0 0122 4.05V7.1" />
-                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 0110 2.25h.09A2 2 0 0122 4.05V7.1" />
-              </svg>
-              07757 835819
-            </a>
             {/* Hamburger */}
             <button
               onClick={() => setMenuOpen(!menuOpen)}
@@ -96,16 +86,6 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a
-            href="tel:07757835819"
-            onClick={() => setMenuOpen(false)}
-            className="flex items-center justify-center gap-3 border-2 border-[#D4A017] text-[#D4A017] font-black px-10 py-4 text-lg uppercase tracking-widest hover:bg-[#D4A017] hover:text-black transition-all duration-200"
-          >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
-            </svg>
-            Call Now: 07757 835819
-          </a>
         </nav>
       </div>
     </>

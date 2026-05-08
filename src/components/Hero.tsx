@@ -47,12 +47,6 @@ export default function Hero() {
               >
                 <span className="relative z-10">GET A FREE QUOTE</span>
               </a>
-              <a
-                href="tel:07757835819"
-                className="border-2 border-[#D4A017]/50 text-white font-black px-8 py-4 text-base uppercase tracking-widest hover:border-[#D4A017] hover:text-[#D4A017] transition-all duration-300 backdrop-blur-sm"
-              >
-                CALL NOW
-              </a>
             </div>
 
             {/* Quick trust pills */}
@@ -154,18 +148,17 @@ export default function Hero() {
                 {/* Contact pills */}
                 <div className="space-y-2.5">
                   {[
-                    { icon: PhoneIcon, text: "07757 835819", href: "tel:07757835819" },
-                    { icon: MailIcon, text: "rjlogistics.removals@gmail.com", href: "mailto:rjlogistics.removals@gmail.com" },
-                    { icon: PinIcon, text: "Nottingham and Surrounding Midlands", href: "#" },
-                  ].map(({ icon: Icon, text, href }) => (
-                    <a
+                    { icon: PhoneIcon, text: "07757 835819" },
+                    { icon: MailIcon, text: "rjlogistics.removals@gmail.com" },
+                    { icon: PinIcon, text: "Nottingham and Surrounding Midlands" },
+                  ].map(({ icon: Icon, text }) => (
+                    <div
                       key={text}
-                      href={href}
-                      className="flex items-center gap-3 bg-black/60 border border-[#D4A017]/15 rounded-lg px-4 py-3 hover:border-[#D4A017]/50 transition-colors group"
+                      className="flex items-center gap-3 bg-black/60 border border-[#D4A017]/25 rounded-lg px-5 py-3.5"
                     >
-                      <Icon className="w-4 h-4 text-[#D4A017] shrink-0" />
-                      <span className="text-gray-300 text-sm group-hover:text-white transition-colors truncate">{text}</span>
-                    </a>
+                      <Icon className="w-5 h-5 text-[#D4A017] shrink-0" />
+                      <span className="text-white text-sm font-semibold tracking-wide truncate">{text}</span>
+                    </div>
                   ))}
                 </div>
               </div>
